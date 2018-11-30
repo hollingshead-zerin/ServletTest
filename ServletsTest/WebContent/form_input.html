@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <title>Student Sign-Up Form</title>
+</head>
+ 
+<body>
+<h2>Student Sign-Up Form</h2>
+<form method="get" action="echo">
+  <fieldset>
+    <legend>Personal Particular</legend>
+    FirstName: <input type="text" name="firstname" /><br /><br />
+    LastName: <input type="text" name="lastname" /><br /><br />
+    Gender: <input type="radio" name="gender" value="m" checked />Male
+    <input type="radio" name="gender" value="f" />Female<br /><br />
+    Age: <select name = "age">
+      <option value="10">&lt; 10 years old</option>
+      <option value="20">11 to 20 years old</option>
+      <option value="30">21 to 30 years old</option>
+      <option value="40">31 to 40 years old</option>
+      <option value="50">41 to 50 years old</option>
+      <option value="60">51 to 60 years old</option>
+      <option value="70">&gt; 70 years old</option>
+    </select><br /><br />
+  	
+  </fieldset>
+ 	
+  <fieldset>
+ 	<legend>Contact Information</legend>
+ 	Street Address: <input type="text" name="street" /><br /><br />
+ 	City: <input type="text" name="city" />
+ 	State: <select name="state">
+      <option value="AZ">Arizona</option>
+      <option value="CA">California</option>
+      <option value="NV">Nevada</option>
+      <option value="UT">Utah</option>
+      <option value="ID">Idaho</option>
+      <option value="OR">Oregon</option>
+      <option value="WA">Washington</option>
+      <option value="MT">Montana</option>
+      <option value="WY">Wyoming</option>
+    </select>
+ 	ZIP: <input type="text" name="zip"/><br /><br />
+ 	Phone Number: <input type="text" name="number"/><br /><br />
+  </fieldset>
+
+  <fieldset>
+    <legend>Comments</legend>
+    <textarea rows="5" cols="30" name="comments">Enter your Comments here...</textarea>
+  </fieldset>
+ 
+  <input type="submit" value="SEND" />
+  <input type="reset" value="CLEAR" />
+</form>
+</body>
+</html>
